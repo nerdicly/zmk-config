@@ -67,10 +67,10 @@
 
         colemak {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp DEL
-&sk LSHFT  &kp A  &kp R  &kp S     &kp T     &kp G        &kp M     &kp N      &kp E      &kp I    &kp O     &kp MINUS
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                         &kp LALT  &kp LGUI  &kp SPACE    &kp BSPC  &kp ENTER  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp F     &kp P           &kp B        &kp J     &kp L      &kp U         &kp Y    &kp SEMI  &kp DEL
+&sk LSHFT  &kp A  &kp R  &kp S     &kp T           &kp G        &kp M     &kp N      &kp E         &kp I    &kp O     &kp MINUS
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp D           &kp V        &kp K     &kp H      &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
+                         &kp LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp BSPC  &kp ENTER  &lt 3 ESCAPE
             >;
 
             label = "colemak";
