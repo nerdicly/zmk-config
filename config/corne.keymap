@@ -15,7 +15,7 @@
 };
 
 &lt {
-    tapping-term-ms = <280>;
+    tapping-term-ms = <200>;
     flavor = "balanced";
     require-prior-idle-ms = <200>;
     hold-trigger-on-release;
@@ -54,7 +54,7 @@
 
         lock {
             bindings = <&kp LG(L)>;
-            key-positions = <12 24>;
+            key-positions = <12 0>;
         };
 
         snapLeft {
