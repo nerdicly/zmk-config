@@ -14,13 +14,6 @@
     release-after-ms = <500>;
 };
 
-&lt {
-    tapping-term-ms = <200>;
-    flavor = "balanced";
-    require-prior-idle-ms = <200>;
-    hold-trigger-on-release;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
