@@ -147,10 +147,10 @@
 
         symbol {
             bindings = <
-&trans  &trans           &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp GRAVE    &kp AMPERSAND  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
-&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL      &kp POUND    &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
-&trans  &trans           &kp SLASH      &kp ASTERISK      &kp CARET      &trans       &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &trans
-                                        &trans            &trans         &trans       &trans         &trans      &trans
+&trans  &trans            &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &kp GRAVE    &kp AMPERSAND  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
+&trans  &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp EQUAL      &kp POUND    &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
+&trans  &ext_power EP_ON  &kp SLASH      &kp ASTERISK      &kp CARET      &trans       &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &trans
+                                         &trans            &trans         &trans       &trans         &trans      &trans
             >;
 
             label = "symbol";
