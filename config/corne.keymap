@@ -48,55 +48,46 @@
         lock {
             bindings = <&kp LG(L)>;
             key-positions = <12 0>;
-            require-prior-idle-ms = <200>;
         };
 
         snapLeft {
             bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <13 14>;
-            require-prior-idle-ms = <200>;
         };
 
         snapRight {
             bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <15 16>;
-            require-prior-idle-ms = <200>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <26 28>;
-            require-prior-idle-ms = <200>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
-            require-prior-idle-ms = <200>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
-            require-prior-idle-ms = <200>;
         };
 
         selectAll {
             bindings = <&kp LC(A)>;
             key-positions = <25 28>;
-            require-prior-idle-ms = <200>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <3 4>;
-            require-prior-idle-ms = <200>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <2 3>;
-            require-prior-idle-ms = <200>;
         };
     };
 
