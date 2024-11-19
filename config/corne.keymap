@@ -103,10 +103,10 @@
 
         colemak {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P           &kp B        &kp J     &kp L      &kp U         &kp Y    &kp SEMI  &kp DEL
-&sk LSHFT  &kp A  &kp R  &kp S     &kp T           &kp G        &kp M     &kp N      &kp E         &kp I    &kp O     &kp MINUS
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp D           &kp V        &kp K     &kp H      &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
-                         &kp LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp BSPC  &kp ENTER  &lt 3 ESCAPE
+&kp TAB    &kp Q  &kp W  &kp F     &kp P           &kp B          &kp J     &kp L      &kp U         &kp Y    &kp SEMI  &kp DEL
+&sk LSHFT  &kp A  &kp R  &kp S     &kp T           &kp G          &kp M     &kp N      &kp E         &kp I    &kp O     &kp MINUS
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp D           &kp V          &kp K     &kp H      &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
+                         &kp LALT  &lt 2 LEFT_GUI  &lt 4 SPACE    &kp BSPC  &kp ENTER  &lt 3 ESCAPE
             >;
 
             label = "colemak";
@@ -114,10 +114,10 @@
 
         qwerty {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R           &kp T        &kp Y     &kp U      &kp I         &kp O    &kp SEMI  &kp DEL
-&sk LSHFT  &kp A  &kp S  &kp D     &kp F           &kp G        &kp H     &kp J      &kp K         &kp L    &kp P     &kp MINUS
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V           &kp B        &kp N     &kp M      &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
-                         &kp LALT  &lt 2 LEFT_GUI  &kp SPACE    &kp BSPC  &kp ENTER  &lt 3 ESCAPE
+&kp TAB    &kp Q  &kp W  &kp E     &kp R           &kp T          &kp Y     &kp U      &kp I         &kp O    &kp SEMI  &kp DEL
+&sk LSHFT  &kp A  &kp S  &kp D     &kp F           &kp G          &kp H     &kp J      &kp K         &kp L    &kp P     &kp MINUS
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V           &kp B          &kp N     &kp M      &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
+                         &kp LALT  &lt 2 LEFT_GUI  &lt 4 SPACE    &kp BSPC  &kp ENTER  &lt 3 ESCAPE
             >;
 
             label = "qwerty";
@@ -149,6 +149,17 @@
             >;
 
             label = "symbol";
+        };
+
+        num {
+            bindings = <
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "num";
         };
     };
 };
