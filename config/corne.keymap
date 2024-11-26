@@ -15,7 +15,6 @@
 };
 
 &num_word {  // num-word, requires PR #1451
-    layers = <NUM>;
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
 
