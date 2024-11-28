@@ -101,6 +101,12 @@
             key-positions = <2 3>;
             require-prior-idle-ms = <200>;
         };
+
+        numword {
+            bindings = <&num_word 4>;
+            key-positions = <25 26>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     keymap {
