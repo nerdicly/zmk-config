@@ -56,7 +56,7 @@
 
         numword {
             bindings = <&num_word 4>;
-            key-positions = <15 16;
+            key-positions = <15 16>;
             require-prior-idle-ms = <200>;
         };
 
