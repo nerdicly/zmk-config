@@ -54,15 +54,9 @@
             key-positions = <12 0>;
         };
 
-        snapLeft {
-            bindings = <&kp LG(LEFT_ARROW)>;
-            key-positions = <14 15>;
-            require-prior-idle-ms = <200>;
-        };
-
-        snapRight {
-            bindings = <&kp LG(RIGHT_ARROW)>;
-            key-positions = <15 16>;
+        numword {
+            bindings = <&num_word 4>;
+            key-positions = <15 16;
             require-prior-idle-ms = <200>;
         };
 
@@ -99,12 +93,6 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <2 3>;
-            require-prior-idle-ms = <200>;
-        };
-
-        numword {
-            bindings = <&num_word 4>;
-            key-positions = <13 14>;
             require-prior-idle-ms = <200>;
         };
     };
@@ -164,10 +152,10 @@
 
         num {
             bindings = <
-&trans  &kp MINUS  &kp N7  &kp N8          &kp N9          &kp PLUS             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0     &kp N4  &kp N5          &kp N6          &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SLASH  &kp N1  &kp N2          &kp N3          &kp ASTRK            &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans          &lt 2 LEFT_GUI  &trans               &trans  &trans  &trans
+&trans  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PLUS             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SLASH  &kp N1  &kp N2  &kp N3  &kp ASTRK            &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans               &trans  &trans  &trans
             >;
 
             label = "num";
