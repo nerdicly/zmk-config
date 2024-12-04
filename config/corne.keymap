@@ -15,10 +15,10 @@
 };
 
 &lt {
-    tapping-term-ms = <220>;
+    tapping-term-ms = <280>;
     quick-tap-ms = <210>;
-    require-prior-idle-ms = <175>;
-    flavor = "balanced";
+    require-prior-idle-ms = <200>;
+    flavor = "hold-preferred";
     hold-trigger-on-release;
     hold-trigger-key-positions = <37 38>;
 };
