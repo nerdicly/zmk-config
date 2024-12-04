@@ -19,6 +19,8 @@
     quick-tap-ms = <210>;
     require-prior-idle-ms = <200>;
     flavor = "balanced";
+    hold-trigger-on-release;
+    hold-trigger-key-positions = <37 38>;
 };
 
 &num_word { continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LSHFT>; };
