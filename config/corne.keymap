@@ -17,7 +17,7 @@
 &lt {
     tapping-term-ms = <220>;
     quick-tap-ms = <210>;
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <175>;
     flavor = "balanced";
     hold-trigger-on-release;
     hold-trigger-key-positions = <37 38>;
