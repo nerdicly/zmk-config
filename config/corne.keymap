@@ -49,11 +49,6 @@
             key-positions = <37 16>;
         };
 
-        context-menu {
-            bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <37 17>;
-        };
-
         lock {
             bindings = <&kp LG(L)>;
             key-positions = <12 0>;
