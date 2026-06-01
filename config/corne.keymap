@@ -59,12 +59,6 @@
             key-positions = <12 0>;
         };
 
-        numword {
-            bindings = <&num_word 4>;
-            key-positions = <15 16>;
-            require-prior-idle-ms = <200>;
-        };
-
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <26 28>;
