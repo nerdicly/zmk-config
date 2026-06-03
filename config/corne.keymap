@@ -19,6 +19,7 @@
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
     flavor = "balanced";
+    bindings = <&kp>, <&kp>;
 };
 
 &num_word { continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LSHFT>; };
@@ -91,7 +92,7 @@
         };
 
         contextMenu {
-            bindings = <&none>;
+            bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <13 14>;
             require-prior-idle-ms = <200>;
         };
