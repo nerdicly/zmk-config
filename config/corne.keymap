@@ -18,7 +18,7 @@
     tapping-term-ms = <350>;
     quick-tap-ms = <190>;
     require-prior-idle-ms = <130>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
 &num_word { continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LSHFT>; };
