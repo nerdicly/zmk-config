@@ -18,8 +18,8 @@
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    flavor = "balanced";
-    bindings = <&kp>, <&kp>;
+    flavor = "tap-preferred";
+    bindings = <&mo>, <&kp>;
 };
 
 &num_word { continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LSHFT>; };
