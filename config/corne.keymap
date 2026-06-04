@@ -96,6 +96,32 @@
             key-positions = <13 14>;
             require-prior-idle-ms = <200>;
         };
+
+        lpar_lt {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+            require-prior-idle-ms = <200>;
+        };
+    };
+
+    behaviors {
+        qexcl: qexcl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QEXCL";
+            bindings = <&kp QMARK>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lpar_lt: lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAR_LT";
+            bindings = <&kp LPAR>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -103,9 +129,9 @@
 
         colemak {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J     &kp L   &kp U         &kp Y    &kp SEMI  &kp DEL
-&sk LSHFT  &kp A  &kp R  &kp S         &kp T           &kp G          &kp M     &kp N   &kp E         &kp I    &kp O     &kp MINUS
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K     &kp H   &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
+&kp TAB    &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J     &kp L   &kp U         &kp Y    &kp SEMI      &kp DEL
+&sk LSHFT  &kp A  &kp R  &kp S         &kp T           &kp G          &kp M     &kp N   &kp E         &kp I    &kp O         &kp MINUS
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K     &kp H   &kp COMMA     &kp DOT  &kp QUESTION  &kp SQT
                          &kp LEFT_ALT  &lt 2 LEFT_GUI  &lt 4 SPACE    &kp BSPC  &trans  &lt 3 ESCAPE
             >;
 
