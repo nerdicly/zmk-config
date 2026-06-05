@@ -107,6 +107,30 @@
             bindings = <&rpar_gt>;
             key-positions = <20 21>;
         };
+
+        slash_bslash {
+            bindings = <&kp BSLH>;
+            key-positions = <7 8>;
+            require-prior-idle-ms = <200>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <8 9>;
+            require-prior-idle-ms = <200>;
+        };
+
+        lbracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <200>;
+        };
+
+        rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <32 33>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     behaviors {
