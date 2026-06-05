@@ -102,6 +102,11 @@
             key-positions = <19 20>;
             require-prior-idle-ms = <200>;
         };
+
+        rpar_gt {
+            bindings = <&rpar_gt>;
+            key-positions = <20 21>;
+        };
     };
 
     behaviors {
@@ -122,6 +127,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        rpar_gt: rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAR_GT";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        dot_col: dot_col {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COL";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        com_semi: com_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COM_SEMI";
+            bindings = <&kp COMMA>, <&kp LS(SEMICOLON)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        fslash_bslash: fslash_bslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FSLASH_BSLASH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -129,9 +170,9 @@
 
         colemak {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J     &kp L   &kp U         &kp Y    &kp SEMI  &kp DEL
-&sk LSHFT  &kp A  &kp R  &kp S         &kp T           &kp G          &kp M     &kp N   &kp E         &kp I    &kp O     &kp MINUS
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K     &kp H   &kp COMMA     &kp DOT  &qexcl    &kp SQT
+&kp TAB    &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J     &kp L   &kp U         &kp Y     &kp APOS  &kp DEL
+&sk LSHFT  &kp A  &kp R  &kp S         &kp T           &kp G          &kp M     &kp N   &kp E         &kp I     &kp O     &kp MINUS
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K     &kp H   &com_semi     &dot_col  &qexcl    &fslash_bslash
                          &kp LEFT_ALT  &lt 2 LEFT_GUI  &lt 4 SPACE    &kp BSPC  &trans  &lt 3 ESCAPE
             >;
 
