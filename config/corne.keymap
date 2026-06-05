@@ -149,7 +149,7 @@
         com_semi: com_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "COM_SEMI";
-            bindings = <&kp COMMA>, <&kp LS(SEMICOLON)>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
