@@ -93,7 +93,7 @@
 
         contextMenu {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <13 14>;
+            key-positions = <25 26>;
             require-prior-idle-ms = <200>;
         };
 
@@ -129,6 +129,54 @@
         rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <32 33>;
+            require-prior-idle-ms = <200>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <13 14>;
+            require-prior-idle-ms = <200>;
+        };
+
+        hashtag {
+            bindings = <&kp POUND>;
+            key-positions = <15 14>;
+            require-prior-idle-ms = <200>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <200>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <200>;
+        };
+
+        and {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <3 16>;
+            require-prior-idle-ms = <200>;
+        };
+
+        asterick {
+            bindings = <&kp ASTERISK>;
+            key-positions = <15 28>;
+            require-prior-idle-ms = <200>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <4 16>;
+            require-prior-idle-ms = <200>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <16 28>;
             require-prior-idle-ms = <200>;
         };
     };
