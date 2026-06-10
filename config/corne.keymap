@@ -132,20 +132,20 @@
             require-prior-idle-ms = <200>;
         };
 
-        at {
-            bindings = <&kp AT>;
+        at_pipe {
+            bindings = <&at_pipe>;
             key-positions = <13 14>;
             require-prior-idle-ms = <200>;
         };
 
-        hashtag {
-            bindings = <&kp POUND>;
+        hasht_caret {
+            bindings = <&hasht_caret>;
             key-positions = <15 14>;
             require-prior-idle-ms = <200>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
+        dol_grave {
+            bindings = <&dol_grave>;
             key-positions = <15 16>;
             require-prior-idle-ms = <200>;
         };
@@ -165,24 +165,6 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <15 28>;
-            require-prior-idle-ms = <200>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <4 16>;
-            require-prior-idle-ms = <200>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <16 28>;
-            require-prior-idle-ms = <200>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <4 17>;
             require-prior-idle-ms = <200>;
         };
     };
@@ -241,6 +223,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        at_pipe: at_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_PIPE";
+            bindings = <&kp AT>, <&kp PIPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hasht_caret: hasht_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HASHT_CARET";
+            bindings = <&kp HASH>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        dol_grave: dol_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOL_GRAVE";
+            bindings = <&kp DOLLAR>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -248,10 +257,10 @@
 
         colemak {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J     &kp L   &kp U         &kp Y     &kp APOS  &kp DEL
-&sk LSHFT  &kp A  &kp R  &kp S         &kp T           &kp G          &kp M     &kp N   &kp E         &kp I     &kp O     &kp MINUS
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K     &kp H   &com_semi     &dot_col  &qexcl    &fslash_bslash
-                         &kp LEFT_ALT  &lt 2 LEFT_GUI  &lt 4 SPACE    &kp BSPC  &trans  &lt 3 ESCAPE
+&kp TAB    &kp Q  &kp W  &kp F         &kp P           &kp B          &kp J     &kp L           &kp U         &kp Y     &kp APOS  &kp DEL
+&sk LSHFT  &kp A  &kp R  &kp S         &kp T           &kp G          &kp M     &kp N           &kp E         &kp I     &kp O     &kp MINUS
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D           &kp V          &kp K     &kp H           &com_semi     &dot_col  &qexcl    &fslash_bslash
+                         &kp LEFT_ALT  &lt 2 LEFT_GUI  &lt 4 SPACE    &kp BSPC  &sk LEFT_SHIFT  &lt 3 ESCAPE
             >;
 
             label = "colemak";
